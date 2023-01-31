@@ -24,3 +24,6 @@ elif num == 4  :
     print(products_list[2] + " : 2")
     del products_list[int(input("the index of product: "))]
     print(products_list)
+    
+
+print("hello")    
