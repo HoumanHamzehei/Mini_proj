@@ -1,0 +1,20 @@
+[   
+        { "customer_name" : "Lionel" ,
+    "customer_adress" : "unit 2, 12 main street, London, wh1 2er" ,
+    "customer_phone"  : "598743156" ,
+    "courier" : "1" ,
+    "status" : "sending"
+     } ,
+     {"customer_name" : "Brad" ,
+    "customer_adress" : "unit 5, 35 main street, Toronto" ,
+    "customer_phone" : "645845343" ,
+    "courier" : "2" ,
+    "status" : "prepared"
+    } ,
+    {"customer_name " : "Mike" ,
+    "customer_adress ": "unit 3, 25 street, Tehran, km2 nmd" ,
+    "customer_phone" : "654587455" ,
+    "courier" : "3" ,
+    "status" : "delivered"
+    }
+]

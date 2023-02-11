@@ -1,29 +1,56 @@
+from function import product_print, product_create, product_update, product_delete
+from function import courier_list , courier_create , courier_update , courier_delete
+from function import order_list , order_create 
+
+
 print("Welcome to the Houman Restaurant")
 
+menu_option = int(input(" exit(0), product_menu_option(1), courier_list(2) , order(3) : "))
 
-products_list =  ["Pizza" , " Sandwich" , " Coka" ]
+num = int(input(" press 1 if you want to print menu, prest 2 if you want to create, press 3 to update, press 4 to remove: "))
 
-num = int(input(" press 1 if you want to order, 0 if you want to exit , 2 if you want to add, press 3 to update, press 4 to remove: "))
+while True:
 
-if num == 1:
-    print(products_list) 
-elif num == 0:
-    exit()    
-elif num == 2:
-    products_list.append(input(""))   
-    print(products_list)    
-elif num == 3  :
-    print(products_list[0] + " : 0 ,")
-    print(products_list[1] + " : 1 ,")
-    print(products_list[2] + " : 2")
-    products_list[int(input("the index of product: "))] = input("new product name: ")
-    print(products_list)
-elif num == 4  :
-    print(products_list[0] + " : 0 ,")
-    print(products_list[1] + " : 1 ,")
-    print(products_list[2] + " : 2")
-    del products_list[int(input("the index of product: "))]
-    print(products_list)
-    
+    if menu_option ==0:
+        exit()
 
-print("hello")    
+    elif menu_option == 1:
+        while True:
+            if num == 0:
+                  break
+            elif  num == 1:
+                product_print()
+            elif num == 2:
+                product_create()
+            elif num == 3:
+                product_update()
+            elif num == 4:
+              product_delete()
+
+    elif menu_option == 2:
+        while True:
+            if num == 0:
+                break
+            elif num == 1 :
+                courier_list()
+            elif num == 2 :
+                courier_create
+            elif num == 3 :
+                courier_update()
+            elif num == 4 :
+                courier_delete
+    elif menu_option == 3 :
+
+        if num == 0 :
+            break
+        elif num == 1 :
+            order_list()
+        elif num == 2 :
+            order_create()
+        elif num == 3 :
+            order_update_status()
+        elif num == 4 :
+            order_update_order()
+        elif num == 5 :
+            order_delete
+            
